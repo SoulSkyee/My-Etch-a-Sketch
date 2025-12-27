@@ -4,8 +4,6 @@ let currentSize = 9;
 const divContainer = document.querySelector(".container");
 const btnMap = document.querySelector(".btnMap");
 
-
-
 // adding the button
 const btnChange = document.createElement("button");
 btnChange.classList.add("btnChange");
@@ -15,8 +13,14 @@ const btnReset = document.createElement("button");
 btnReset.classList.add("btnReset");
 btnReset.textContent = "empty the grid"
 
+// adding a title of etch-a-sketch
+const title = document.createElement("h3");
+title.classList.add("title");
+title.innerHTML = `<span class="title-red">etch-</span><span class="title-green">a</span><span class="title-yellow">-sketch</span>`;
+
 // IMPORTANT - append all of it.
 btnMap.appendChild(btnChange);
+btnMap.appendChild(title);
 btnMap.appendChild(btnReset);
 
 // function untuk ganti grid
